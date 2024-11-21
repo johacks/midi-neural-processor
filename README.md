@@ -9,16 +9,8 @@
 
 ### Install
 
-#### Install via pip...
-
 ```bash
 $ pip install midi-neural-processor
-```
-
-#### ... or clone Repository
-
-```bash
-$ git clone https://github.com/jason9693/midi-neural-processor.git
 ```
 
 ### Encoding & Load midi file
@@ -27,7 +19,7 @@ $ git clone https://github.com/jason9693/midi-neural-processor.git
 * encode_midi() is a role of pre-processing.
 
 ```python
-from processor import encode_midi
+from midi_neural_processor.processor import encode_midi
 encoded = encode_midi('bin/ADIG04.mid') ## 'bin/AIDG04.mid' is midi file path.
 ## output: [int, int, int, int, ... ].
 ## int range is range(0,388). 388 = NOTE_ON + NOTE_OFF + TIME_SHIFT + VELOCITY 
@@ -40,7 +32,7 @@ encoded = encode_midi('bin/ADIG04.mid') ## 'bin/AIDG04.mid' is midi file path.
 * all elements in integer array should be range(0,388). 
 
 ```python
-from processor import decode_midi
+from midi_neural_processor.processor import decode_midi
 decode_midi(encoded, 'bin/test.mid') ## 'bin/test.mid' is midi file path.
 ```
 
