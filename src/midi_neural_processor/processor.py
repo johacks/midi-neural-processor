@@ -251,17 +251,3 @@ def decode_midi(idx_array, file_path=None):
     if file_path is not None:
         mid.write(file_path)
     return mid
-
-
-if __name__ == '__main__':
-    encoded = encode_midi('bin/ADIG04.mid')
-    print(encoded)
-    decided = decode_midi(encoded,file_path='bin/test.mid')
-
-    ins = pretty_midi.PrettyMIDI('bin/ADIG04.mid')
-    print(ins)
-    print(ins.instruments[0])
-    for i in ins.instruments:
-        print(i.control_changes)
-        print(i.notes)
-

@@ -5,14 +5,20 @@
 
 * This processor's algorithm is based on [PerformanceRNN](https://magenta.tensorflow.org/performance-rnn) & [Music Transformer (Polyphonic Music)](https://arxiv.org/abs/1809.04281) Model's preprocessing algorithm suggested by Google Magenta.
 
+## Simple Usage
 
+### Install
 
-## Simple Useage
-
-### Download
+#### Install via pip...
 
 ```bash
-$ git clone https://github.com/jason9693/midi-processor.git
+$ pip install midi-neural-processor
+```
+
+#### ... or clone Repository
+
+```bash
+$ git clone https://github.com/jason9693/midi-neural-processor.git
 ```
 
 ### Encoding & Load midi file
@@ -38,14 +44,10 @@ from processor import decode_midi
 decode_midi(encoded, 'bin/test.mid') ## 'bin/test.mid' is midi file path.
 ```
 
-
-
 ## Comming Soon
 
 1. Pedal Control
 2. Midi Converter to .tfrecords
-
-
 
 ## License
 
