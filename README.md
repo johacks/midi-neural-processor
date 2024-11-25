@@ -1,4 +1,6 @@
-# Midi Neural Processor
+# Midi Neural Processor (Fork)
+
+**This repository is a fork of [this](https://github.com/jason9693/midi-neural-processor) repo with the main objective of structuring as an installable python package via pip.**
 
 * Repository for midi-based machine learning model's {pre/post} processing.
 * You can use this processor in any machine learnig library like tensorflow, pytorch, etc...
